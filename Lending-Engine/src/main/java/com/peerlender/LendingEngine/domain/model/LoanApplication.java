@@ -1,9 +1,14 @@
 package com.peerlender.LendingEngine.domain.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@NoArgsConstructor
+@Getter
 public final class LoanApplication {
 
     @Id
@@ -22,29 +27,6 @@ public final class LoanApplication {
         this.interestRate = interestRate;
     }
 
-    public LoanApplication() {
-        System.out.println("1");
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public User getBorrower() {
-        return borrower;
-    }
-
-    public int getRepaymentTerm() {
-        return repaymentTerm;
-    }
-
-    public double getInterestRate() {
-        return interestRate;
-    }
 
     @Override
     public boolean equals(Object o) {
