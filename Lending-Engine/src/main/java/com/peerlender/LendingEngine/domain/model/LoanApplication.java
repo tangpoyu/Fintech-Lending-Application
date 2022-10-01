@@ -1,5 +1,6 @@
 package com.peerlender.LendingEngine.domain.model;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
@@ -13,19 +14,26 @@ public final class LoanApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "loan_application_generator")
     private long id;
-    private int amount;
+
+    private Status status;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Money amount;
     @ManyToOne
     private User borrower;
     private int repaymentTerm;
     private double interestRate;
 
-    public LoanApplication(int amount, User borrower, int repaymentTerm, double interestRate) {
-        this.amount = amount;
+    public LoanApplication(Money money, User borrower, int repaymentTerm, double interestRate) {
+        this.status = Status.ONGOING;
+        this.amount = money;
         this.borrower = borrower;
         this.repaymentTerm = repaymentTerm;
         this.interestRate = interestRate;
     }
 
+    public void setStatus(Status status) {
+        this.status = status;
+    }
 
     @Override
     public boolean equals(Object o) {

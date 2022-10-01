@@ -1,6 +1,8 @@
 package com.peerlender.securityapp.application;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.peerlender.securityapp.user.dto.UserDTO;
 import com.peerlender.securityapp.user.exception.UserNotFoundException;
 import com.peerlender.securityapp.user.model.User;
 import com.peerlender.securityapp.user.model.repository.UserRepository;
@@ -28,13 +30,10 @@ public class UserController {
     public void Register(HttpServletRequest req){
         try {
             byte[] inputStreamBytes = StreamUtils.copyToByteArray(req.getInputStream());
-            Map<String, String> jsonRequest = new ObjectMapper().readValue(inputStreamBytes, Map.class);
-            String requestBodyJsonString = jsonRequest.get("body");
-            String username = jsonRequest.get("username");
-            String password = jsonRequest.get("password");
-            User user = new User(username,password);
+            UserDTO userDTO= new ObjectMapper().readValue(inputStreamBytes, UserDTO.class);
+            User user = new User(userDTO.getUsername(),userDTO.getPassword());
             userRepository.save(user);
-            notificationService.SendMessage(user);
+            notificationService.SendMessage(userDTO);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

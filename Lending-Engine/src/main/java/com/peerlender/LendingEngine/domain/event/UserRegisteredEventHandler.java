@@ -1,6 +1,7 @@
 package com.peerlender.LendingEngine.domain.event;
 
 import com.google.gson.Gson;
+import com.peerlender.LendingEngine.domain.model.Balance;
 import com.peerlender.LendingEngine.domain.model.User;
 import com.peerlender.LendingEngine.domain.repository.UserRepository;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class UserRegisteredEventHandler {
 
     public void HandleUserRegistration(String userJson){
         User user = GSON.fromJson(userJson, User.class);
+        user.setBalance(new Balance());
         LOGGER.info("user {} registered", user.getUsername());
         userRepository.save(user);
     }

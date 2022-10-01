@@ -6,9 +6,10 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class LoanRequest {
+public final class LoanRequest {
 
     private final int amount;
+    private final String currencyType;
     private final int daysToRepay;
     private final double interestRate;
 }

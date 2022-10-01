@@ -1,6 +1,7 @@
 package com.peerlender.securityapp.user.service;
 
 import com.google.gson.Gson;
+import com.peerlender.securityapp.user.dto.UserDTO;
 import com.peerlender.securityapp.user.model.User;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
@@ -18,8 +19,9 @@ public class NotificationService {
         this.rabbitTemplate = rabbitTemplate;
     }
 
-    public void SendMessage(User user){
-        String userJson = GSON.toJson(user);
+    public void SendMessage(UserDTO userDTO){
+        userDTO.setPassword(null);
+        String userJson = GSON.toJson(userDTO);
         rabbitTemplate.convertAndSend(topic,route,userJson);
     }
 }

@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import java.lang.reflect.Type;
+import java.time.LocalDate;
 import java.util.Map;
 
 @Component
@@ -28,10 +29,8 @@ public class UserRegisteredEventHandler {
     }
 
     public void HandleUserRegistration(String userJson){
-        Type mapTokenType = new TypeToken<Map<String, String>>(){}.getType();
-        Map<String, String> jsonMap = new Gson().fromJson(userJson, mapTokenType);
-        String username = jsonMap.get("username");
-        User user = new User(username);
+        User user = new Gson().fromJson(userJson, User.class);
+        user.setRegisteredSince(LocalDate.now());
         LOGGER.info("user {} registered", user.getUsername());
         userRepository.save(user);
     }

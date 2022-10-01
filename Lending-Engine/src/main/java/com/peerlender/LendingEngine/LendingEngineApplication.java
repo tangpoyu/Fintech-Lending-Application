@@ -1,6 +1,7 @@
 package com.peerlender.LendingEngine;
 
 
+import com.peerlender.LendingEngine.domain.model.Balance;
 import com.peerlender.LendingEngine.domain.model.User;
 import com.peerlender.LendingEngine.domain.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,8 @@ public class LendingEngineApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		userRepository.save(new User("John","John", "B", "Software Developer", 27 ));
-		userRepository.save(new User("Peter","Peter","C", "Pilot",21));
-		userRepository.save(new User("Henry","Henry","E", "Unemployed",25));
+		userRepository.save(new User("John","John", "B", "Software Developer", 27 , new Balance()));
+		userRepository.save(new User("Peter","Peter","C", "Pilot",21, new Balance()));
+		userRepository.save(new User("Henry","Henry","E", "Unemployed",25, new Balance()));
 	}
 }
