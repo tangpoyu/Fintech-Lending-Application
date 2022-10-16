@@ -16,8 +16,9 @@
             <a class="nav-link active" aria-current="page" routerLink="/user" *ngIf="displayFor(['ROLE_User'])">User Dashboard</a>
           </li>
         </ul>
-        <button *ngIf="!isLoggedIn()" type="button" class="btn btn-success" routerLink="/login" >Login</button>
-        <button *ngIf="isLoggedIn()" type="button" class="btn btn-danger" routerLink="/logout" (click)="logout()">Logout</button>
+        <button *ngIf="!isLoggedIn()" type="button" class="btn" routerLink="/login" >Login</button>
+        <button *ngIf="!isLoggedIn()" type="button" class="btn" routerLink="/register" >Sign up</button>
+        <button *ngIf="isLoggedIn()" type="button" class="btn" routerLink="/logout" (click)="logout()">Logout</button>
       </div>
     </div>
   </nav>

@@ -1,0 +1,43 @@
+<h2 class="fs-5">Loan</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic architecto perferendis, asperiores accusantium alias, quis quae voluptates sunt esse quam. Eaque praesentium ad eligendi, iure quasi exercitationem nisi voluptatibus.</p>
+<div class="contanier mt-5" style="display: flex; justify-content: center;">
+    <div class="card" style="padding: 20px; width:30%; ">
+        <form #requestLoanForm="ngForm" (ngSubmit)="requestLoan(requestLoanForm)">
+            <input type="text"
+            ngModel
+            name="amount"
+            id="amount"
+            placeholder="Enter your amount"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="currencyType"
+            id="currencyType"
+            placeholder="Enter your currencyType"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="daysToRepay"
+            id="daysToRepay"
+            placeholder="Enter your daysToRepay"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="interestRate"
+            id="interestRate"
+            placeholder="Enter your interestRate"
+            class="form-control mb-3"
+            >
+
+            <input type="submit"
+            value="Request loan"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>

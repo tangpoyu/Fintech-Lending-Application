@@ -1,7 +1,7 @@
 package com.peerlender.security2.configuration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.peerlender.security2.dto.ErrorDto;
+import com.peerlender.security2.dto.ErrorDTO;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.AuthenticationException;
@@ -24,7 +24,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
                          AuthenticationException authException) throws IOException, ServletException {
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         response.setHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE);
-        MAPPER.writeValue(response.getOutputStream(), new ErrorDto("Unauthorized path."));
+        MAPPER.writeValue(response.getOutputStream(), new ErrorDTO("Unauthorized path."));
 //        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
     }
 }

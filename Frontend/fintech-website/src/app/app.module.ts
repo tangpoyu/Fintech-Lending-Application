@@ -15,6 +15,16 @@ import { RouterModule } from '@angular/router';
 import { AuthGuard } from './_auth/auth.guard';
 import { AuthInterCeptor } from './_auth/auth.interceptor';
 import { UserService } from './_services/user.service';
+import { RegisterComponent } from './register/register.component';
+import { RequestLoanComponent } from './user/request-loan/request-loan.component';
+import { LoanApplicationComponent } from './user/loan-application/loan-application.component';
+import { BorrowedComponent } from './user/borrowed/borrowed.component';
+import { LentComponent } from './user/lent/lent.component';
+import { SettingComponent } from './user/setting/setting.component';
+import { NotifierModule } from 'angular-notifier';
+import { DataTablesModule } from "angular-datatables";
+import { RechargeComponent } from './user/recharge/recharge.component';
+import { WithdrawComponent } from './user/withdraw/withdraw.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +34,24 @@ import { UserService } from './_services/user.service';
     AdminComponent,
     UserComponent,
     LoginComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    RegisterComponent,
+    RequestLoanComponent,
+    LoanApplicationComponent,
+    BorrowedComponent,
+    LentComponent,
+    SettingComponent,
+    RechargeComponent,
+    WithdrawComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    NotifierModule,
+    DataTablesModule
   ],
   providers: [
     AuthGuard,

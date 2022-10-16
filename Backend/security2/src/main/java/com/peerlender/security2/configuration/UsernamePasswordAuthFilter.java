@@ -43,9 +43,9 @@ public class UsernamePasswordAuthFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response
             , FilterChain filterChain) throws ServletException, IOException {
 
-        Cookie[] cookies = Optional.ofNullable(request.getCookies()).orElse(null);
-        if("/authenticate".equals(request.getServletPath())
-                && HttpMethod.POST.matches(request.getMethod()) && cookies == null){
+
+        if("/login".equals(request.getServletPath())
+                && HttpMethod.POST.matches(request.getMethod())){
             JwtRequest credential = MAPPER.readValue(request.getInputStream(), JwtRequest.class);
             SecurityContextHolder.getContext().setAuthentication(
                     new UsernamePasswordAuthenticationToken(

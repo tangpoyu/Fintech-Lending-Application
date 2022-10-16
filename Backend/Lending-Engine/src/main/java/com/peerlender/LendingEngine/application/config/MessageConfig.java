@@ -1,7 +1,7 @@
 package com.peerlender.LendingEngine.application.config;
 
 
-import com.peerlender.LendingEngine.domain.event.UserRegisteredEventHandler;
+import com.peerlender.LendingEngine.application.event.UserRegisteredEventHandler;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;

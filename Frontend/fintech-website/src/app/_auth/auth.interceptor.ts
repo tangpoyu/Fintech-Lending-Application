@@ -29,7 +29,7 @@ export class AuthInterCeptor implements HttpInterceptor{
                         // user is forrbidden from path
                         this.router.navigate(['/forbidden'])
                     }
-                    return throwError("Some this is wrong");
+                    return throwError(error.status);
                 }
             )
         )

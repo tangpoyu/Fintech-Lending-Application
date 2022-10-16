@@ -1,6 +1,29 @@
-<div class="contanier mt-5">
-    <div class="card text-center" style="background-color: cornflowerblue; padding: 20px;">
-        <h1>This is User Page</h1>
-        <h3>{{message}}</h3>
+
+    <div #refSideBar class="contanier d-flex">
+        <div  class="sidebar" id="side_nav">
+            <div  class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+                <h1 class="fs-4"><span class="bg-white text-dard rounded shadow px-2 me-2" (click)="openOrCloseSideBar(refSideBar)">CS</span>User sidebar</h1>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+    
+            <ul class="list-unstyled px-2">
+                <li #refEl class = "active" (click)="clickSideBar(refEl)"><a class="text-decoration-none d-block" routerLink="requestLoan">Request Loan</a></li>
+                <li #refE2 class = "" (click)="clickSideBar(refE2)"><a class="text-decoration-none d-block" routerLink="loanApplication">Loan Application</a></li>
+                <li #refE3 class = "" (click)="clickSideBar(refE3)"><a class="text-decoration-none d-block" routerLink="borrowed">Borrored</a></li>
+                <li #refE4 class = "" (click)="clickSideBar(refE4)"><a class="text-decoration-none d-block" routerLink="lent">Lent</a></li>
+                <li #refE5 class = "" (click)="clickSideBar(refE5)"><a class="text-decoration-none d-block" routerLink="recharge">Recharge</a></li>
+                <li #refE6 class = "" (click)="clickSideBar(refE6)"><a class="text-decoration-none d-block" routerLink="withdraw">Withdraw</a></li>
+            </ul>
+    
+            <hr class="h-color mx-2">
+            <ul class="list-unstyled px-2">
+                <li #refE7 class = "" (click)="clickSideBar(refE7)"><a class="text-decoration-none d-block" routerLink="setting" >Setting</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="content px-3 pt-">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-</div>
+

@@ -4,7 +4,7 @@ package com.peerlender.LendingEngine.domain.service;
 
 import com.peerlender.LendingEngine.domain.exeception.LoanApplicationNotFoundException;
 import com.peerlender.LendingEngine.domain.exeception.LoanNotFoundException;
-import com.peerlender.LendingEngine.domain.model.*;
+import com.peerlender.LendingEngine.domain.entity.*;
 import com.peerlender.LendingEngine.domain.repository.LoanApplicationRepository;
 import com.peerlender.LendingEngine.domain.repository.LoanRepository;
 import com.peerlender.LendingEngine.domain.repository.UserRepository;
@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 @Component
 public class LoanService {

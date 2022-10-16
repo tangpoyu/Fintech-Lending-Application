@@ -1,0 +1,27 @@
+<h2 class="fs-5">Recharge</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic architecto perferendis, asperiores accusantium alias, quis quae voluptates sunt esse quam. Eaque praesentium ad eligendi, iure quasi exercitationem nisi voluptatibus.</p>
+<div class="contanier mt-5" style="display: flex; justify-content: center;">
+    <div class="card" style="padding: 20px; width:30%;">
+        <form #requestLoanForm="ngForm" (submit)="recharge(requestLoanForm)">
+            <input type="text"
+            ngModel
+            name="amount"
+            id="amount"
+            placeholder="Enter your amount"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="currency"
+            id="currency"
+            placeholder="Enter your currencyType"
+            class="form-control mb-3"
+            >
+
+            <input type="submit"
+            value="Recharge"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<h2 class="fs-5">Borrowed</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic architecto perferendis, asperiores accusantium
+  alias, quis quae voluptates sunt esse quam. Eaque praesentium ad eligendi, iure quasi exercitationem nisi
+  voluptatibus.</p>
+<div ng-app="myTable" class="contanier mt-5" style="display: flex; justify-content: center;">
+  <table class="row-border hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User name</th>
+        <th>Amount</th>
+        <th>Amount repayed</th>
+        <th>Date lent</th>
+        <th>Date due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let loan of loans" (click)="selectLoanToRepay(loan)">
+        <td>{{loan.id}}</td>
+        <td>{{loan.lenderName}}</td>
+        <td>{{loan.amount.currency}},{{loan.amount.amount}}</td>
+        <td>{{loan.amountRepayed.currency}},{{loan.amountRepayed.amount}}</td>
+        <td>{{loan.datelent}}</td>
+        <td>{{loan.datedue}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="bg-modal" id="check">
+    <div class="modal-content">
+      <div class="close" (click)="closeBox()">+</div>
+      <h5>Repay loan</h5>
+      <div class="contanier mt-5" style="display: flex; justify-content: center;">
+        <div class="card" style="padding: 20px; width:60%;">
+          <form #repayLoanForm="ngForm" (submit)="RepayLoan(repayLoanForm)">
+            <input type="text" ngModel name="amount" id="amount" placeholder="Enter your amount"
+              class="form-control mb-3">
+
+            <input type="submit" value="Repay" class="btn btn-outline-primary form-control rounded-0">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

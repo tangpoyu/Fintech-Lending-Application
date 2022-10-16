@@ -38,7 +38,7 @@ public class Security2Application implements CommandLineRunner {
 
 		Set<Role> adminRoles = new HashSet<>();
 		adminRoles.add(adminRole);
-		userService.registerNewUser(new User("admin123", "admin@pass","admin","admin",adminRoles));
+		userService.registerNewUser(new User("admin123", "admin@pass",adminRoles));
 
 //		Set<Role> userRoles = new HashSet<>();
 //		userRoles.add(userRole);

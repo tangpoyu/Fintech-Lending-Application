@@ -35,22 +35,22 @@ public class JwtService implements UserDetailsService {
         this.jwtUtil = jwtUtil;
     }
 
-    public String  createJwtToken(UserDetails userDetails) throws Exception {
-//        String username = userDetails.getUsername();
-//        String password = userDetails.getPassword();
-//        authenticate(username, password);
-//        UserDetails userDetails = loadUserByUsername(username);
-        String token = jwtUtil.generateToken(userDetails);
-        return token;
-//        User user = userRepository.findById(username).orElseThrow(() -> new UsernameNotFoundException("Username isn't valid"));
-//        return new JwtResponse(user, token);
-    }
+//    public String  createJwtToken(UserDetails userDetails) throws Exception {
+////        String username = userDetails.getUsername();
+////        String password = userDetails.getPassword();
+////        authenticate(username, password);
+////        UserDetails userDetails = loadUserByUsername(username);
+//        String token = jwtUtil.generateToken(userDetails);
+//        return token;
+////        User user = userRepository.findById(username).orElseThrow(() -> new UsernameNotFoundException("Username isn't valid"));
+////        return new JwtResponse(user, token);
+//    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findById(username).orElseThrow(() -> new UsernameNotFoundException("Username isn't valid"));
         return new org.springframework.security.core.userdetails.User(
-                user.getUserName(),
+                user.getUsername(),
                 user.getPassword(),
                 getAuthorities(user));
     }

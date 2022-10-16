@@ -16,12 +16,11 @@ import java.util.Set;
 @NoArgsConstructor
 public class User {
 
-
-
     @Id
-    private String userName;
+    private String username;
     private String password;
-    private String firstName, lastName;
+
+//    private String firstName, lastName;
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "USER_ROLE",
         joinColumns = {
@@ -33,11 +32,16 @@ public class User {
     )
     private Set<Role> role ;
 
-    public User(String userName, String password, String firstName, String lastName, Set<Role> role) {
-        this.userName = userName;
+    public User(String username, String password, Set<Role> role) {
+        this.username = username;
         this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
+//        this.firstName = firstName;
+//        this.lastName = lastName;
         this.role = role;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 }

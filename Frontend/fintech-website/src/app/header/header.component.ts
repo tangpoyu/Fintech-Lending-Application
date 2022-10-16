@@ -8,7 +8,7 @@ import { UserService } from '../_services/user.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   constructor(
     private userAuthService: UserAuthService,
@@ -16,8 +16,7 @@ export class HeaderComponent implements OnInit {
     private userService: UserService
     ) { }
 
-  ngOnInit(): void {
-  }
+ 
 
   public isLoggedIn(): boolean{
     return this.userAuthService.isLoggedIn();

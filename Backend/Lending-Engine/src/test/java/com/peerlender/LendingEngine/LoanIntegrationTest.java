@@ -1,7 +1,7 @@
 package com.peerlender.LendingEngine;
 
 import com.google.gson.Gson;
-import com.peerlender.LendingEngine.application.model.LoanRequest;
+import com.peerlender.LendingEngine.application.dto.LoanRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
