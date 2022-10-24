@@ -35,4 +35,13 @@ export class AuthGuard implements CanActivate {
       return false;
   }
   
+
+  private checkMatch(role: string[]): boolean{
+    const match =  this.userService.roleMatch(role);
+            if(match) return true
+            else{
+              this.router.navigate(['/forbidden'])
+              return false;
+            }
+  }
 }

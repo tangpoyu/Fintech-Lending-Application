@@ -13,8 +13,11 @@ export class LentComponent implements OnInit, OnDestroy {
   loans : loan[] = []
   dtOptions: DataTables.Settings = {}
   dtTrigger: Subject<any> = new Subject()
+  status: string = "ONGOING"
 
-  constructor(private userservice: UserService) { }
+  constructor(private userService: UserService) {
+    this.userService.isInitialize()
+   }
 
   ngOnInit(): void {
     this.dtOptions = {
@@ -27,7 +30,7 @@ export class LentComponent implements OnInit, OnDestroy {
   }
 
   updateLoan(){
-    this.userservice.lent("ONGOING").subscribe(
+    this.userService.lent(this.status).subscribe(
       {
         next: (res) => {
           this.loans = res
@@ -38,6 +41,11 @@ export class LentComponent implements OnInit, OnDestroy {
         complete: () => console.log("Done")
       }
     )
+  }
+
+  selectStatus(status: string){
+    this.status = status;
+    this.updateLoan()
   }
 
   ngOnDestroy(): void{

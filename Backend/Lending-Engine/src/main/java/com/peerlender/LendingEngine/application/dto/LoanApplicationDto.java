@@ -16,7 +16,7 @@ public class LoanApplicationDto {
         this.interestRate = loanApplication.getInterestRate();
         this.repaymentTerm = loanApplication.getRepaymentTerm();
         this.username = loanApplication.getBorrower().getUsername();
-        this.fullName = loanApplication.getBorrower().getFirstName() + " " + loanApplication.getBorrower().getLastName();
+        this.fullName = loanApplication.getBorrower().getFirst_name() + " " + loanApplication.getBorrower().getLast_name();
         this.occupation = loanApplication.getBorrower().getOccupation();
         this.amount = new AmountDto(loanApplication.getAmount().getAmount(),loanApplication.getAmount().getCurrency().name());
     }

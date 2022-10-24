@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { NotifierService } from 'angular-notifier';
 import { UserService } from 'src/app/_services/user.service';
+import { UserComponent } from '../user.component';
 
 @Component({
   selector: 'app-recharge',
@@ -11,7 +12,9 @@ import { UserService } from 'src/app/_services/user.service';
 export class RechargeComponent implements OnInit {
 
   constructor(private userService: UserService,
-    private notifyService: NotifierService) { }
+    private notifyService: NotifierService, private user: UserComponent) {
+      this.userService.isInitialize()
+     }
 
   ngOnInit(): void {
   }
@@ -21,6 +24,7 @@ export class RechargeComponent implements OnInit {
       {
         next: (res) => {
           this.notifyService.notify('success',"You have recharged successfully.")
+          this.user.updateUserData()
           console.log(res)
           },
         error: (err) => {

@@ -8,11 +8,18 @@ export class UserAuthService {
 
   constructor(private httpClient:HttpClient) { }
  
-  public setRoles(roles: Array<string>) {
+  public setRoles(roles: Array<string>): string {
+    let r = ""
+
+    roles.forEach((role, index) => {
+      if (role === "app_user") r = role
+      else if (role == "app_admin") r = role
+    })
     localStorage.setItem("roles", JSON.stringify(roles));
+    return r
   }
 
-  public getRoles(): Array<Map<string,string>> {
+  public getRoles(): Array<string> {
     let result = localStorage.getItem('roles')?.toString() ?? "";
     if(result === "") return [];
     return JSON.parse(result);

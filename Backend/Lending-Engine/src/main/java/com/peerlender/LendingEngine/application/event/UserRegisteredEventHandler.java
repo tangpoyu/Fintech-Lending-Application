@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.peerlender.LendingEngine.domain.entity.Balance;
 import com.peerlender.LendingEngine.domain.entity.User;
 import com.peerlender.LendingEngine.domain.repository.UserRepository;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -24,8 +26,10 @@ public class UserRegisteredEventHandler {
         return methodName;
     }
 
-    public void HandleUserRegistration(String userJson){
-        User user = GSON.fromJson(userJson, User.class);
+    public void HandleUserRegistration(byte[] eventByte) throws JSONException {
+        JSONObject event = new JSONObject(new String(eventByte));
+        System.out.println(event);
+        User user = GSON.fromJson(event.get("details").toString(), User.class);
         user.setBalance(new Balance());
         LOGGER.info("user {} registered", user.getUsername());
         userRepository.save(user);

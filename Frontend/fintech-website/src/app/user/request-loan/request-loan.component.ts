@@ -12,8 +12,9 @@ export class RequestLoanComponent implements OnInit {
 
   private readonly notifier: NotifierService;
 
-  constructor(private usrService: UserService,
+  constructor(private userService: UserService,
               private notifierService: NotifierService) {
+    this.userService.isInitialize()            
     this.notifier = notifierService;
    }
 
@@ -21,7 +22,7 @@ export class RequestLoanComponent implements OnInit {
   }
 
   requestLoan(ngForm: NgForm){
-    this.usrService.requestLoan(ngForm.value).subscribe(
+    this.userService.requestLoan(ngForm.value).subscribe(
       (response: any) => {
         this.successBuildLoanApplication(response);
       },

@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MessageConfig {
 
-    public static final String QUEUE_NAME = "user.registered.lending";
+    public static final String QUEUE_NAME = "oauth2-.REGISTER";
 
     @Bean
     public MessageListenerAdapter UserRegisteredEventListener(UserRegisteredEventHandler userRegisteredEventHandler){
@@ -53,7 +53,7 @@ public class MessageConfig {
     public Binding Binding(Queue queue, TopicExchange topicExchange){
         System.out.println("create binding in spring bean repository.");
         // the message sent to TopicExchange can be distributed to all queue of TopicExchange which name starts with user.
-        return BindingBuilder.bind(queue).to(topicExchange).with("user.registered.#");
+        return BindingBuilder.bind(queue).to(topicExchange).with("KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER");
     }
 
 }

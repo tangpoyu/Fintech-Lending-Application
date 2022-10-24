@@ -13,19 +13,12 @@ export class AdminComponent implements OnInit {
   constructor(private userService: UserService ) { }
 
   ngOnInit(): void {
-    this.forAdmin();
   }
 
-  forAdmin(){
-    this.userService.forAdmin().subscribe(
-      (response) => {
-        console.log(response)
-        this.message = response;
-      },
-      (error) => {
-        console.log(error)
-      }
-    )
+
+  clickSideBar(element: HTMLElement){
+    $(".sidebar ul li.active").removeClass('active');
+    element.classList.add('active');
   }
 
 }

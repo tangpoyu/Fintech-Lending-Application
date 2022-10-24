@@ -7,22 +7,21 @@ import com.peerlender.LendingEngine.domain.exeception.LoanNotFoundException;
 import com.peerlender.LendingEngine.domain.entity.*;
 import com.peerlender.LendingEngine.domain.repository.LoanApplicationRepository;
 import com.peerlender.LendingEngine.domain.repository.LoanRepository;
-import com.peerlender.LendingEngine.domain.repository.UserRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Service
 public class LoanService {
 
     private final LoanApplicationRepository loanApplicationRepository;
-    private final UserRepository userRepository;
+
     private final LoanRepository loanRepository;
 
-    public LoanService(LoanApplicationRepository loanApplicationRepository, UserRepository userRepository, LoanRepository loanRepository) {
+    public LoanService(LoanApplicationRepository loanApplicationRepository, LoanRepository loanRepository) {
         this.loanApplicationRepository = loanApplicationRepository;
-        this.userRepository = userRepository;
         this.loanRepository = loanRepository;
     }
 
@@ -64,7 +63,7 @@ public class LoanService {
         return loanRepository.findAllByLenderAndStatus(lender, status);
     }
 
-    public List<Loan> GetLoans(){
-        return loanRepository.findAll();
+    public List<Loan> GetLoans(Status status){
+        return loanRepository.findAllByStatus(status).orElse(new ArrayList<>());
      }
 }

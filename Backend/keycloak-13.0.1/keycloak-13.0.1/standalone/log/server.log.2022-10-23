@@ -1,0 +1,852 @@
+2022-10-23 14:57:29,757 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final
+2022-10-23 14:57:30,205 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+2022-10-23 14:57:30,211 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2022-10-23 14:57:30,314 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Keycloak 13.0.1 (WildFly Core 15.0.1.Final) starting
+2022-10-23 14:57:30,318 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	file.encoding = MS950
+	file.separator = \
+	java.awt.headless = true
+	java.class.path = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\jboss-modules.jar
+	java.class.version = 61.0
+	java.home = C:\Program Files\Java\jdk-17.0.4.1
+	java.io.tmpdir = C:\Users\user\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk-17.0.4.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\user\anaconda3;C:\Users\user\anaconda3\Scripts;C:\Users\user\anaconda3\Library\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\bin;C:\Users\user\AppData\Local\ActiveState\cache\bin;D:\asm;C:\Program Files\dotnet\;C:\Program Files\GitHub CLI\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\user\.cargo\bin;C:\Users\user\AppData\Local\activestate\cache\bin;C:\Users\user\AppData\Local\ActiveState\StateTool\release;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\Composer\vendor\bin;C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\.dotnet\tools;C:\Users\user\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 17.0.4.1+1-LTS-2
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 17.0.4.1
+	java.version.date = 2022-08-18
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 17.0.4.1+1-LTS-2
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1
+	jboss.host.name = boyulaptop1
+	jboss.modules.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = boyulaptop1
+	jboss.qualified.host.name = boyulaptop1
+	jboss.server.base.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone
+	jboss.server.config.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration
+	jboss.server.data.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\data
+	jboss.server.deploy.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\data\content
+	jboss.server.log.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\log
+	jboss.server.name = boyulaptop1
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration/logging.properties
+	module.path = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\modules
+	native.encoding = MS950
+	org.jboss.boot.log.file = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 11
+	os.version = 10.0
+	path.separator = ;
+	program.name = standalone.bat
+	sun.arch.data.model = 64
+	sun.boot.library.path = C:\Program Files\Java\jdk-17.0.4.1\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\jboss-modules.jar -mp D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\modules org.jboss.as.standalone -Djboss.home.dir=D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = MS950
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.stderr.encoding = ms950
+	sun.stdout.encoding = ms950
+	user.country = US
+	user.dir = D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\bin
+	user.home = C:\Users\user
+	user.language = en
+	user.name = user
+	user.script = 
+	user.timezone = Asia/Taipei
+	user.variant = 
+2022-10-23 14:57:30,321 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\log\server.log -Dlogging.configuration=file:D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration/logging.properties 
+2022-10-23 14:57:30,902 INFO  [org.wildfly.security] (ServerService Thread Pool -- 20) ELY00001: WildFly Elytron version 1.15.3.Final
+2022-10-23 14:57:31,177 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 23) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+2022-10-23 14:57:31,383 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-10-23 14:57:31,397 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 16) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2022-10-23 14:57:31,616 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2022-10-23 14:57:31,627 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.4.Final
+2022-10-23 14:57:31,632 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.4.Final
+2022-10-23 14:57:31,660 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 51) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2022-10-23 14:57:31,665 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 36) WFLYHEALTH0001: Activating Base Health Subsystem
+2022-10-23 14:57:31,671 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 37) WFLYCLINF0001: Activating Infinispan subsystem.
+2022-10-23 14:57:31,685 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 45) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2022-10-23 14:57:31,686 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 49) WFLYSEC0002: Activating Security Subsystem
+2022-10-23 14:57:31,695 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2022-10-23 14:57:31,697 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2022-10-23 14:57:31,697 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 38) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2022-10-23 14:57:31,726 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 39) WFLYRS0016: RESTEasy version 3.15.1.Final
+2022-10-23 14:57:31,729 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.5.Final starting
+2022-10-23 14:57:31,786 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.4.27.Final)
+2022-10-23 14:57:31,812 WARN  [org.wildfly.clustering.web.undertow] (ServerService Thread Pool -- 52) WFLYCLWEBUT0007: No routing provider found for default-server; using legacy provider based on static configuration
+2022-10-23 14:57:31,836 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 31) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2022-10-23 14:57:31,886 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2022-10-23 14:57:31,886 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2022-10-23 14:57:31,918 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.20.Final
+2022-10-23 14:57:31,962 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file 'D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration\application.keystore' does not exist. Used blank.
+2022-10-23 14:57:31,963 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 52) WFLYUT0014: Creating file handler for path 'D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2022-10-23 14:57:31,985 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2022-10-23 14:57:32,020 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2022-10-23 14:57:32,020 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2022-10-23 14:57:32,040 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2022-10-23 14:57:32,061 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2022-10-23 14:57:32,082 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) Queuing requests.
+2022-10-23 14:57:32,085 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2022-10-23 14:57:32,167 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2022-10-23 14:57:32,236 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: Keycloak cumulative patch ID is: base, one-off patches include: none
+2022-10-23 14:57:32,250 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2022-10-23 14:57:32,250 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2022-10-23 14:57:32,254 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\deployments
+2022-10-23 14:57:32,269 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "keycloak-server.war" (runtime-name: "keycloak-server.war")
+2022-10-23 14:57:32,269 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "keycloak-to-rabbit-3.0.jar" (runtime-name: "keycloak-to-rabbit-3.0.jar")
+2022-10-23 14:57:32,300 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2022-10-23 14:57:32,336 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2022-10-23 14:57:32,336 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/KeycloakDS]
+2022-10-23 14:57:32,678 INFO  [org.keycloak.subsystem.server.extension.KeycloakProviderDeploymentProcessor] (MSC service thread 1-6) Deploying Keycloak provider: keycloak-to-rabbit-3.0.jar
+2022-10-23 14:57:32,959 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 54) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.9.Final
+2022-10-23 14:57:32,997 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-10-23 14:57:32,998 INFO  [org.infinispan.CONFIG] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2022-10-23 14:57:33,063 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 54) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2022-10-23 14:57:33,063 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 55) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2022-10-23 14:57:33,252 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0002: Started authenticationSessions cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 57) WFLYCLINF0002: Started offlineClientSessions cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started actionTokens cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 66) WFLYCLINF0002: Started loginFailures cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0002: Started clientSessions cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0002: Started sessions cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0002: Started work cache from keycloak container
+2022-10-23 14:57:33,300 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 60) WFLYCLINF0002: Started offlineSessions cache from keycloak container
+2022-10-23 14:57:33,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0002: Started realms cache from keycloak container
+2022-10-23 14:57:33,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 59) WFLYCLINF0002: Started authorization cache from keycloak container
+2022-10-23 14:57:33,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0002: Started keys cache from keycloak container
+2022-10-23 14:57:33,348 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started users cache from keycloak container
+2022-10-23 14:57:33,424 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0273: Excluded subsystem webservices via jboss-deployment-structure.xml does not exist.
+2022-10-23 14:57:33,831 INFO  [org.keycloak.services] (ServerService Thread Pool -- 64) KC-SERVICES0001: Loading config from standalone.xml or domain.xml
+2022-10-23 14:57:33,879 INFO  [org.keycloak.url.DefaultHostnameProviderFactory] (ServerService Thread Pool -- 64) Frontend: <request>, Admin: <frontend>, Backend: <request>
+2022-10-23 14:57:34,222 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: url=localhost
+
+2022-10-23 14:57:34,222 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: port=5672
+
+2022-10-23 14:57:34,223 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: username=guest
+
+2022-10-23 14:57:34,225 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: vhost=/
+
+2022-10-23 14:57:34,225 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: use_tls=false
+
+2022-10-23 14:57:34,226 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqConfig] (ServerService Thread Pool -- 64) keycloak-to-rabbitmq configuration: exchange=myUserRegisteredTopic
+
+2022-10-23 14:57:34,226 WARN  [org.keycloak.services] (ServerService Thread Pool -- 64) KC-SERVICES0047: keycloak-to-rabbitmq (com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProviderFactory) is implementing the internal SPI eventsListener. This SPI is internal and may change without notice
+2022-10-23 14:57:34,260 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started realmRevisions cache from keycloak container
+2022-10-23 14:57:34,266 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started userRevisions cache from keycloak container
+2022-10-23 14:57:34,272 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started authorizationRevisions cache from keycloak container
+2022-10-23 14:57:34,273 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (ServerService Thread Pool -- 64) Node name: boyulaptop1, Site name: null
+2022-10-23 14:57:38,687 INFO  [org.keycloak.connections.jpa.DefaultJpaConnectionProviderFactory] (ServerService Thread Pool -- 64) Database info: {databaseUrl=jdbc:h2:D:\Spring boot\Fintech-Lending-Application\Backend\keycloak-13.0.1\keycloak-13.0.1\standalone\data/keycloak, databaseUser=SA, databaseProduct=H2 1.4.197 (2018-03-18), databaseDriver=H2 JDBC Driver 1.4.197 (2018-03-18)}
+2022-10-23 14:57:39,995 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 64) HHH000204: Processing PersistenceUnitInfo [
+	name: keycloak-default
+	...]
+2022-10-23 14:58:08,368 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 64) HHH000412: Hibernate Core {5.3.20.Final}
+2022-10-23 14:58:08,371 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 64) HHH000206: hibernate.properties not found
+2022-10-23 14:58:08,526 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 64) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2022-10-23 14:58:08,685 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 64) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-23 14:58:08,726 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 64) Envers integration enabled? : true
+2022-10-23 14:58:09,104 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 64) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2022-10-23 14:58:09,150 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 64) HV000001: Hibernate Validator 6.0.22.Final
+2022-10-23 14:58:10,017 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 64) HHH000397: Using ASTQueryTranslatorFactory
+2022-10-23 14:58:10,752 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,754 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002205: Adding provider class org.keycloak.services.filters.KeycloakSecurityHeadersFilter from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,754 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002205: Adding provider class org.keycloak.services.error.KeycloakErrorHandler from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,755 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002200: Adding class resource org.keycloak.services.resources.JsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,756 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002200: Adding class resource org.keycloak.services.resources.ThemeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,756 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RobotsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,756 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.admin.AdminRoot from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,757 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.RealmsResource from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,757 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002210: Adding provider singleton org.keycloak.services.util.ObjectMapperResolver from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,757 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002220: Adding singleton resource org.keycloak.services.resources.WelcomeResource from Application class org.keycloak.services.resources.KeycloakApplication
+2022-10-23 14:58:10,817 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: '/auth' for server 'default-server'
+2022-10-23 14:58:10,866 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 32) WFLYSRV0010: Deployed "keycloak-to-rabbit-3.0.jar" (runtime-name : "keycloak-to-rabbit-3.0.jar")
+2022-10-23 14:58:10,866 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 43) WFLYSRV0010: Deployed "keycloak-server.war" (runtime-name : "keycloak-server.war")
+2022-10-23 14:58:10,895 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2022-10-23 14:58:10,897 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 13.0.1 (WildFly Core 15.0.1.Final) started in 41520ms - Started 637 of 916 services (587 services are lazy, passive or on-demand)
+2022-10-23 14:58:10,898 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2022-10-23 14:58:10,899 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2022-10-23 15:18:04,984 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:18:05,914 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 15:36:07,925 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:07,925 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:07,925 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-13) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,097 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,681 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,681 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,837 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,890 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:08,972 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:09,055 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:09,113 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:09,186 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:09,265 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:09,863 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 15:36:39,671 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 15:36:46,762 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 15:36:47,588 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 15:40:34,057 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 15:44:20,478 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 15:48:06,876 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 15:51:53,252 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 15:55:39,633 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 15:59:26,004 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:03:12,369 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:07:00,709 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:10:48,828 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:14:36,683 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:18:25,501 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:22:12,772 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:31:04,655 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:34:51,616 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:38:39,603 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:42:27,645 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:46:15,625 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:50:02,603 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:53:50,606 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 16:57:38,610 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:01:26,640 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:05:14,613 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:09:02,596 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:12:50,596 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:16:38,607 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:20:26,607 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:24:13,616 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:28:01,622 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:31:48,624 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:35:35,695 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:39:23,596 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:43:11,684 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:46:59,598 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:50:47,593 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:54:35,606 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 17:58:23,609 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:02:11,602 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:05:57,966 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:09:44,330 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:13:30,698 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:17:17,060 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:21:03,416 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:24:49,786 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:28:36,161 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:32:22,506 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:36:08,869 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:39:55,244 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:43:41,622 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:47:27,987 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:51:14,355 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:55:02,603 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 18:58:49,614 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:02:37,598 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:06:25,618 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:10:13,611 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:14:01,610 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:17:49,593 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:21:36,615 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:25:24,609 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:29:12,591 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:33:00,619 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:36:48,605 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:40:35,607 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:44:23,616 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:48:11,613 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:51:59,610 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:55:47,603 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 19:59:34,613 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:03:20,962 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:07:26,615 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:32,957 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:33,376 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-15) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:33,577 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-16) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:33,988 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:38,178 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-18) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,723 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-19) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,731 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,783 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,782 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-18) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,783 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,784 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-19) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,787 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-11) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,787 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-15) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,821 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-19) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,871 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-17) SQL Error: 23505, SQLState: 23505
+2022-10-23 20:07:49,872 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-17) Unique index or primary key violation: "PRIMARY_KEY_7A ON PUBLIC.COMPOSITE_ROLE(COMPOSITE, CHILD_ROLE) VALUES ('989af450-b005-42f6-8989-0fbc51304233', '88aa32ee-654b-4ed0-9573-680a86baca51', 78)"; SQL statement:
+insert into COMPOSITE_ROLE (COMPOSITE, CHILD_ROLE) values (?, ?) [23505-197]
+2022-10-23 20:07:49,891 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-15) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,891 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:07:49,893 INFO  [org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl] (default task-17) HHH000010: On release of batch it still contained JDBC statements
+2022-10-23 20:07:49,933 ERROR [org.hibernate.internal.ExceptionMapperStandardImpl] (default task-17) HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2022-10-23 20:07:49,936 WARN  [com.arjuna.ats.arjuna] (default task-17) ARJUNA012125: TwoPhaseCoordinator.beforeCompletion - failed for SynchronizationImple< 0:ffffac140a0c:1e24e05c:6354e5dc:38b3, org.wildfly.transaction.client.AbstractTransaction$AssociatingSynchronization@296d3181 >: javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1478)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:512)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3310)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2506)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl.beforeCompletion(JtaTransactionCoordinatorImpl.java:352)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.synchronization.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:47)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:37)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction.performConsumer(AbstractTransaction.java:236)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction.performConsumer(AbstractTransaction.java:247)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction$AssociatingSynchronization.beforeCompletion(AbstractTransaction.java:292)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
+	at org.jboss.jts//com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:360)
+	at org.jboss.jts//com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:91)
+	at org.jboss.jts//com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+	at org.jboss.jts.integration//com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:94)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.LocalTransaction.commitAndDissociate(LocalTransaction.java:78)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.ContextTransactionManager.commit(ContextTransactionManager.java:71)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:90)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:136)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.filters.AbstractRequestFilter.close(AbstractRequestFilter.java:64)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.filters.AbstractRequestFilter.filter(AbstractRequestFilter.java:49)
+	at org.keycloak.keycloak-wildfly-extensions@13.0.1//org.keycloak.provider.wildfly.WildFlyRequestFilter.doFilter(WildFlyRequestFilter.java:39)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:841)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.4.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate@5.3.20.Final//org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate@5.3.20.Final//org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate@5.3.20.Final//org.hibernate.persister.collection.AbstractCollectionPersister.insertRows(AbstractCollectionPersister.java:1576)
+	at org.hibernate@5.3.20.Final//org.hibernate.action.internal.CollectionUpdateAction.execute(CollectionUpdateAction.java:88)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478)
+	at org.hibernate@5.3.20.Final//org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356)
+	at org.hibernate@5.3.20.Final//org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1472)
+	... 70 more
+Caused by: org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: "PRIMARY_KEY_7A ON PUBLIC.COMPOSITE_ROLE(COMPOSITE, CHILD_ROLE) VALUES ('989af450-b005-42f6-8989-0fbc51304233', '88aa32ee-654b-4ed0-9573-680a86baca51', 78)"; SQL statement:
+insert into COMPOSITE_ROLE (COMPOSITE, CHILD_ROLE) values (?, ?) [23505-197]
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.get(DbException.java:179)
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.get(DbException.java:155)
+	at com.h2database.h2@1.4.197//org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:101)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVSecondaryIndex.requireUnique(MVSecondaryIndex.java:236)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:202)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVTable.addRow(MVTable.java:732)
+	at com.h2database.h2@1.4.197//org.h2.command.dml.Insert.insertRows(Insert.java:182)
+	at com.h2database.h2@1.4.197//org.h2.command.dml.Insert.update(Insert.java:134)
+	at com.h2database.h2@1.4.197//org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at com.h2database.h2@1.4.197//org.h2.command.Command.executeUpdate(Command.java:261)
+	at com.h2database.h2@1.4.197//org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at com.h2database.h2@1.4.197//org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.27.Final//org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175)
+	... 78 more
+
+2022-10-23 20:07:49,952 ERROR [io.undertow.request] (default task-17) UT005023: Exception handling request to /auth/admin/realms/oauth2/roles-by-id/989af450-b005-42f6-8989-0fbc51304233/composites: org.keycloak.models.ModelDuplicateException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.keycloak.keycloak-model-jpa@13.0.1//org.keycloak.connections.jpa.PersistenceExceptionConverter.convert(PersistenceExceptionConverter.java:82)
+	at org.keycloak.keycloak-model-jpa@13.0.1//org.keycloak.connections.jpa.JpaExceptionConverter.convert(JpaExceptionConverter.java:31)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.transaction.JtaTransactionWrapper.lambda$handleException$0(JtaTransactionWrapper.java:65)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1779)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.transaction.JtaTransactionWrapper.handleException(JtaTransactionWrapper.java:67)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:136)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.filters.AbstractRequestFilter.close(AbstractRequestFilter.java:64)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.services.filters.AbstractRequestFilter.filter(AbstractRequestFilter.java:49)
+	at org.keycloak.keycloak-wildfly-extensions@13.0.1//org.keycloak.provider.wildfly.WildFlyRequestFilter.doFilter(WildFlyRequestFilter.java:39)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.core@2.2.5.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow@23.0.2.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet@2.2.5.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.core@2.2.5.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:841)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.4.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate@5.3.20.Final//org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate@5.3.20.Final//org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:45)
+	at org.hibernate@5.3.20.Final//org.hibernate.persister.collection.AbstractCollectionPersister.insertRows(AbstractCollectionPersister.java:1576)
+	at org.hibernate@5.3.20.Final//org.hibernate.action.internal.CollectionUpdateAction.execute(CollectionUpdateAction.java:88)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:478)
+	at org.hibernate@5.3.20.Final//org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:356)
+	at org.hibernate@5.3.20.Final//org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:39)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1472)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:512)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3310)
+	at org.hibernate@5.3.20.Final//org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2506)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl.beforeCompletion(JtaTransactionCoordinatorImpl.java:352)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.synchronization.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:47)
+	at org.hibernate@5.3.20.Final//org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:37)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction.performConsumer(AbstractTransaction.java:236)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction.performConsumer(AbstractTransaction.java:247)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.AbstractTransaction$AssociatingSynchronization.beforeCompletion(AbstractTransaction.java:292)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
+	at org.jboss.jts//com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:360)
+	at org.jboss.jts//com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:91)
+	at org.jboss.jts//com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+	at org.jboss.jts//com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
+	at org.jboss.jts.integration//com.arjuna.ats.jbossatx.BaseTransactionManagerDelegate.commit(BaseTransactionManagerDelegate.java:94)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.LocalTransaction.commitAndDissociate(LocalTransaction.java:78)
+	at org.wildfly.transaction.client@1.1.13.Final//org.wildfly.transaction.client.ContextTransactionManager.commit(ContextTransactionManager.java:71)
+	at org.keycloak.keycloak-services@13.0.1//org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:90)
+	... 50 more
+Caused by: org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: "PRIMARY_KEY_7A ON PUBLIC.COMPOSITE_ROLE(COMPOSITE, CHILD_ROLE) VALUES ('989af450-b005-42f6-8989-0fbc51304233', '88aa32ee-654b-4ed0-9573-680a86baca51', 78)"; SQL statement:
+insert into COMPOSITE_ROLE (COMPOSITE, CHILD_ROLE) values (?, ?) [23505-197]
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.get(DbException.java:179)
+	at com.h2database.h2@1.4.197//org.h2.message.DbException.get(DbException.java:155)
+	at com.h2database.h2@1.4.197//org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:101)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVSecondaryIndex.requireUnique(MVSecondaryIndex.java:236)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:202)
+	at com.h2database.h2@1.4.197//org.h2.mvstore.db.MVTable.addRow(MVTable.java:732)
+	at com.h2database.h2@1.4.197//org.h2.command.dml.Insert.insertRows(Insert.java:182)
+	at com.h2database.h2@1.4.197//org.h2.command.dml.Insert.update(Insert.java:134)
+	at com.h2database.h2@1.4.197//org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at com.h2database.h2@1.4.197//org.h2.command.Command.executeUpdate(Command.java:261)
+	at com.h2database.h2@1.4.197//org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at com.h2database.h2@1.4.197//org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at org.jboss.ironjacamar.jdbcadapters@1.4.27.Final//org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)
+	at org.hibernate@5.3.20.Final//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175)
+	... 78 more
+
+2022-10-23 20:07:53,234 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.DELETE
+
+2022-10-23 20:07:54,895 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.REALM_ROLE.CREATE
+
+2022-10-23 20:08:41,981 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:08:43,539 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:08:44,971 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:08:47,099 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:08:57,909 WARN  [org.keycloak.events] (default task-17) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=username_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tang, redirect_uri=http://localhost:4200, first_name=poyu, code_id=59576a5a-1969-466f-961f-9598e9d7cc4f, email=cb570317@gmail.com, username=admin, authSessionParentId=59576a5a-1969-466f-961f-9598e9d7cc4f, authSessionTabId=zExQC7JuPjA
+2022-10-23 20:08:57,917 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:09:14,614 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 20:09:14,622 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:09:15,555 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-17) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 20:13:01,901 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:14:21,661 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 20:15:53,432 WARN  [org.keycloak.events] (default task-12) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=username_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tang, redirect_uri=http://localhost:4200, first_name=poyu, code_id=5ecc0eb6-0063-49df-b972-69a19383c035, email=cb570317@gmail.com, username=tangpoyu, authSessionParentId=5ecc0eb6-0063-49df-b972-69a19383c035, authSessionTabId=oxS0XlkuPJc
+2022-10-23 20:15:53,443 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:16:15,393 WARN  [org.keycloak.events] (default task-12) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=email_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tang, redirect_uri=http://localhost:4200, first_name=poyu, code_id=5ecc0eb6-0063-49df-b972-69a19383c035, email=cb570317@gmail.com, username=cena, authSessionParentId=5ecc0eb6-0063-49df-b972-69a19383c035, authSessionTabId=oxS0XlkuPJc
+2022-10-23 20:16:15,399 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:16:30,611 WARN  [org.keycloak.events] (default task-12) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=username_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tangpoyu, redirect_uri=http://localhost:4200, first_name=poyu, code_id=5ecc0eb6-0063-49df-b972-69a19383c035, email=b10623041@gemail.yuntech.edu.tw, username=tangpoyu, authSessionParentId=5ecc0eb6-0063-49df-b972-69a19383c035, authSessionTabId=oxS0XlkuPJc
+2022-10-23 20:16:30,619 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:16:48,588 WARN  [org.keycloak.events] (default task-12) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=username_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tangpoyu, redirect_uri=http://localhost:4200, first_name=poyu, code_id=5ecc0eb6-0063-49df-b972-69a19383c035, email=b10623041@gemail.yuntech.edu.tw, username=tangpoyu, authSessionParentId=5ecc0eb6-0063-49df-b972-69a19383c035, authSessionTabId=oxS0XlkuPJc
+2022-10-23 20:16:48,593 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:18:14,189 WARN  [org.keycloak.events] (default task-12) type=REGISTER_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=email_in_use, auth_method=openid-connect, auth_type=code, register_method=form, last_name=tang, redirect_uri=http://localhost:4200, first_name=poyu, code_id=5ecc0eb6-0063-49df-b972-69a19383c035, email=cb570317@gmail.com, username=cena, authSessionParentId=5ecc0eb6-0063-49df-b972-69a19383c035, authSessionTabId=oxS0XlkuPJc
+2022-10-23 20:18:14,195 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.REGISTER_ERROR
+
+2022-10-23 20:18:53,836 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 20:18:53,844 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:18:54,875 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 20:22:41,320 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:26:29,634 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:28:11,409 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:28:13,448 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 20:28:33,086 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 20:28:33,096 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:28:33,978 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 20:32:20,382 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:36:06,747 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 20:53:28,677 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:53:28,677 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-12) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:53:28,678 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-21) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:53:28,677 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-22) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:53:28,723 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-22) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 20:53:29,056 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 20:57:16,588 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-20) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:01:04,596 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:04:51,595 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:06:31,411 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 21:07:26,417 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 21:07:54,471 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 21:07:54,480 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 21:08:17,913 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 21:15:27,460 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:15:59,280 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 21:16:35,413 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 21:16:35,419 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 21:17:33,639 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 21:32:25,294 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:32:25,910 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 21:33:10,338 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 21:33:11,328 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 21:33:36,548 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 21:38:36,482 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 21:38:37,540 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 21:40:50,634 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 21:40:59,117 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 21:40:59,979 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 21:44:46,448 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:48:32,970 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:52:19,327 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:56:05,710 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 21:57:17,411 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 21:57:47,799 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 21:57:50,572 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 21:58:57,086 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 21:58:57,093 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 22:00:16,484 WARN  [org.keycloak.protocol.oidc.utils.OAuth2CodeParser] (default task-26) Code '351ed1ef-94dd-4675-b894-05cb4ebf77ac' already used for userSession '264a0c9a-273d-400d-b819-aa6fc64d4103' and client '6c6961fc-6dd2-4220-b7a4-a34ce440717f'.
+2022-10-23 22:00:16,700 WARN  [org.keycloak.events] (default task-26) type=CODE_TO_TOKEN_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=invalid_code, grant_type=authorization_code, code_id=264a0c9a-273d-400d-b819-aa6fc64d4103, client_auth_method=client-secret
+2022-10-23 22:00:16,716 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.CODE_TO_TOKEN_ERROR
+
+2022-10-23 22:00:45,258 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 22:01:03,204 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 22:05:09,086 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:10:21,651 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:15:00,802 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:34:46,228 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-26) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:35:07,997 WARN  [org.keycloak.events] (default task-26) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2022-10-23 22:35:16,419 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-28) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.ADMIN.oauth2.SUCCESS.USER.DELETE
+
+2022-10-23 22:35:37,051 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 22:35:37,063 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 22:35:55,666 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 22:44:29,493 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:44:29,833 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 22:45:02,142 WARN  [org.keycloak.events] (default task-27) type=LOGIN_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:4200, code_id=fa6f9975-d98a-45a4-95c1-442227de06e3, username=tangpoyu, authSessionParentId=fa6f9975-d98a-45a4-95c1-442227de06e3, authSessionTabId=DKGKMdzN0wQ
+2022-10-23 22:45:02,184 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.LOGIN_ERROR
+
+2022-10-23 22:45:10,359 WARN  [org.keycloak.events] (default task-27) type=LOGIN_ERROR, realmId=oauth2, clientId=oauth2-demo-pkce-client, userId=null, ipAddress=127.0.0.1, error=user_not_found, auth_method=openid-connect, auth_type=code, redirect_uri=http://localhost:4200, code_id=fa6f9975-d98a-45a4-95c1-442227de06e3, username=tangpoyu, authSessionParentId=fa6f9975-d98a-45a4-95c1-442227de06e3, authSessionTabId=DKGKMdzN0wQ
+2022-10-23 22:45:10,372 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.ERROR.oauth2-demo-pkce-client.LOGIN_ERROR
+
+2022-10-23 22:45:25,165 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 22:45:39,093 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 22:51:24,039 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:53:53,746 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 22:54:28,271 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 22:55:04,002 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 22:55:19,889 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 23:11:33,132 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 23:12:45,410 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 23:12:45,456 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 23:12:45,768 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 23:12:46,756 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.null.LOGOUT
+
+2022-10-23 23:13:13,189 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 23:13:22,361 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-27) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 23:24:58,351 WARN  [org.keycloak.events] (default task-27) type=REFRESH_TOKEN_ERROR, realmId=master, clientId=security-admin-console, userId=null, ipAddress=127.0.0.1, error=invalid_token, grant_type=refresh_token, client_auth_method=client-secret
+2022-10-23 23:37:55,819 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER
+
+2022-10-23 23:37:55,865 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN
+
+2022-10-23 23:37:57,532 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.CODE_TO_TOKEN
+
+2022-10-23 23:42:51,181 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 23:44:04,317 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 23:47:58,861 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+
+2022-10-23 23:48:03,427 INFO  [com.github.aznamier.keycloak.event.provider.RabbitMqEventListenerProvider] (default task-30) keycloak-to-rabbitmq SUCCESS sending message: KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REFRESH_TOKEN
+

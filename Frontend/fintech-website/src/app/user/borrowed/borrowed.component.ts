@@ -4,6 +4,7 @@ import { NotifierService } from 'angular-notifier';
 import { Subject } from 'rxjs';
 import { loan } from 'src/app/interface/loan';
 import { UserService } from 'src/app/_services/user.service';
+import { UserComponent } from '../user.component';
 
 @Component({
   selector: 'app-borrowed',
@@ -16,9 +17,13 @@ export class BorrowedComponent implements OnInit, OnDestroy {
   dtOptions: DataTables.Settings = {}
   dtTrigger: Subject<any> = new Subject()
   selectedLoanID: number = -1
+  status: string = "ONGOING"
 
   constructor(private userService: UserService,
-    private notifierService: NotifierService) { }
+    private notifierService: NotifierService,
+    private user: UserComponent) {
+      this.userService.isInitialize()
+     }
 
 
 
@@ -33,7 +38,7 @@ export class BorrowedComponent implements OnInit, OnDestroy {
   }
 
   updateLoan(){
-    this.userService.Borrored("ONGOING").subscribe(
+    this.userService.Borrored(this.status).subscribe(
       {
         next: (res) => {
           this.loans = res
@@ -46,11 +51,18 @@ export class BorrowedComponent implements OnInit, OnDestroy {
     )
   }
 
+  selectStatus(status: string){
+    this.status = status;
+    this.updateLoan()
+  }
+  
+
   ngOnDestroy(): void {
     this.dtTrigger.unsubscribe()
   }
 
   selectLoanToRepay(loan: loan){
+    if (this.status == "COMPLETED") return
     const box = document.getElementById("check")
     if(box != null) {
       box.style.display = 'flex'
@@ -67,6 +79,7 @@ export class BorrowedComponent implements OnInit, OnDestroy {
     this.userService.repay(repay).subscribe({
       next: (res) => {
         this.updateLoan()
+        this.user.updateUserData()
         this.notifierService.notify('success',"You have repayed successfully.")
         this.closeBox()
         console.log(res)

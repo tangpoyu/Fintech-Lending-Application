@@ -33,7 +33,7 @@ public class UserController {
     @PostMapping("admin")
     @PreAuthorize("hasRole('ROLE_Admin')")
     public ResponseEntity<String> forAdmin(@AuthenticationPrincipal UserDetails userDetails){
-        return ResponseEntity.ok(userDetails.getUsername());
+        return ResponseEntity.ok("admin");
     }
 
     @PostMapping("user")

@@ -2,6 +2,10 @@
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic architecto perferendis, asperiores accusantium
   alias, quis quae voluptates sunt esse quam. Eaque praesentium ad eligendi, iure quasi exercitationem nisi
   voluptatibus.</p>
+
+  <button (click)="selectStatus('ONGOING')" style="margin-right: 10px;">Current</button>  
+  <button (click)="selectStatus('COMPLETED')">History</button>  
+
 <div ng-app="myTable" class="contanier mt-5" style="display: flex; justify-content: center;">
   <table class="row-border hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
     <thead>
@@ -15,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let loan of loans"  >
+      <tr *ngFor="let loan of loans">
         <td>{{loan.id}}</td>
         <td>{{loan.borrowerName}}</td>
         <td>{{loan.amount.currency}},{{loan.amount.amount}}</td>
@@ -26,4 +30,3 @@
     </tbody>
   </table>
 </div>
-

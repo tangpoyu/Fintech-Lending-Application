@@ -19,34 +19,4 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
-  signUp(signForm: NgForm) {
-    let loginData = {
-      username : "",
-      password : ""
-    }
-    loginData.username = signForm.value.username
-    loginData.password = signForm.value.password
-    this.userService.register(signForm.value).subscribe(
-      (response: any) => {
-        this.userService.login(loginData).subscribe(
-          (response: any) => {
-            this.userAuthService.setRoles(response.authorities)
-            if (response.authorities[0].authority === "ROLE_Admin") {
-              this.router.navigate(['/admin']);
-            } else {
-              this.router.navigate(['/user'])
-            }
-         },
-          (error) => {
-            console.log(error)
-          }
-        )
-      },
-      (error) => {
-        console.log(error);
-      }
-    )
-  }
 }

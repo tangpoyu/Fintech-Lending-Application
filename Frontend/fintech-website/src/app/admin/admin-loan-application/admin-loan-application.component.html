@@ -1,0 +1,35 @@
+<h2 class="fs-5">Loan Application</h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic architecto perferendis, asperiores accusantium
+  alias, quis quae voluptates sunt esse quam. Eaque praesentium ad eligendi, iure quasi exercitationem nisi
+  voluptatibus.</p>
+
+  <button (click)="selectStatus('ONGOING')" style="margin-right: 10px;">Current</button>  
+  <button (click)="selectStatus('COMPLETED')">History</button>  
+  
+<div ng-app="myTable" class="contanier mt-5" style="display: flex; justify-content: center;">
+  <table class="row-border hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User name</th>
+        <th>Full name</th>
+        <th>Occupation</th>
+        <th>Amount</th>
+        <th>InterestRate</th>
+        <th>RepaymentTerm</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let group of loanApplicationData">
+        <td>{{group.id}}</td>
+        <td>{{group.username}}</td>
+        <td>{{group.fullName}}</td>
+        <td>{{group.occupation}}</td>
+        <td>{{group.amount.currency}}.{{group.amount.amount}} </td>
+        <td>{{group.interestRate}}</td>
+        <td>{{group.repaymentTerm}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

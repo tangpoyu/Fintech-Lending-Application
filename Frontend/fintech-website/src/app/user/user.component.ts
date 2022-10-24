@@ -15,14 +15,24 @@ declare var $: any;
 export class UserComponent implements OnInit{
 
   message = "";
+  money = 0;
 
-  constructor(private usrService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router) { 
+    this.userService.isInitialize()
+  }
 
   ngOnInit(): void {
+    this.updateUserData()
     this.router.navigate(['/user/requestLoan'])
   }
 
- 
+  updateUserData(){
+    this.userService.getUserLoanData().subscribe({
+      next: (res) => this.money = res.amount,
+      error: (err) => console.log(err),
+      complete: () => console.log("Initialize user loan data.")
+    })
+  }
 
   clickSideBar(element: HTMLElement){
     $(".sidebar ul li.active").removeClass('active');
@@ -31,17 +41,5 @@ export class UserComponent implements OnInit{
 
   openOrCloseSideBar(element: HTMLElement) {
     element.classList.remove('active');
-  }
-
-  forUser() {
-    this.usrService.forUser().subscribe(
-      (response) => {
-        console.log(response)
-        this.message = response;
-      },
-      (error) => {
-        console.log(error)
-      }
-    )
   }
 }

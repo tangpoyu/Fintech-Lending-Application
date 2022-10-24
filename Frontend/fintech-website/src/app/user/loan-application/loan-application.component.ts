@@ -4,6 +4,7 @@ import { UserService } from 'src/app/_services/user.service';
 import { LoanApplicaion } from '../../interface/loanApplication';
 import { DataTableDirective } from 'angular-datatables';
 import { NotifierService } from 'angular-notifier';
+import { UserComponent } from '../user.component';
 
 @Component({
   selector: 'app-loan-application',
@@ -22,7 +23,9 @@ export class LoanApplicationComponent implements OnInit, OnDestroy{
 
 
   constructor(private userService: UserService,
-    private notifierService: NotifierService) {
+    private notifierService: NotifierService,
+    private user: UserComponent) {
+      this.userService.isInitialize()
   }
 
 
@@ -74,6 +77,7 @@ export class LoanApplicationComponent implements OnInit, OnDestroy{
       {
         next: (response) => {
           this.updateLoanApplication() 
+          this.user.updateUserData()
           this.notifierService.notify('success',`You have accepted loan application ${this.selectedLoanApplicationID} successfully.`)
           this.closeBox()
         },
