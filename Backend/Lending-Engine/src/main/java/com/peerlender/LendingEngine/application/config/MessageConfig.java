@@ -50,10 +50,15 @@ public class MessageConfig {
     }
 
     @Bean
-    public Binding Binding(Queue queue, TopicExchange topicExchange){
+    public Binding BindingToRegister(Queue queue, TopicExchange topicExchange){
         System.out.println("create binding in spring bean repository.");
         // the message sent to TopicExchange can be distributed to all queue of TopicExchange which name starts with user.
         return BindingBuilder.bind(queue).to(topicExchange).with("KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.REGISTER");
+    }
+
+    @Bean
+    public Binding BindToIdentifyProviderRegister(Queue queue, TopicExchange topicExchange){
+        return BindingBuilder.bind(queue).to(topicExchange).with("KK.EVENT.CLIENT.oauth2.SUCCESS.oauth2-demo-pkce-client.LOGIN");
     }
 
 }

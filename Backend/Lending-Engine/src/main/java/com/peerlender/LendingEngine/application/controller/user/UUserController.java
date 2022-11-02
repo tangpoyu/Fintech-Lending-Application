@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.transaction.Transactional;
 
 @RestController
-@RequestMapping(value = "user")
+@RequestMapping(value = "api/user", method = {RequestMethod.GET,RequestMethod.POST})
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost", "http://localhost:443", "https://localhost"}, maxAge = 3600, allowCredentials = "true",methods = {RequestMethod.GET,RequestMethod.POST})
 public class UUserController {
 
     private final JwtService jwtService;
@@ -42,7 +42,7 @@ public class UUserController {
         return ResponseEntity.ok(userData);
     }
 
-    @PutMapping("/setting")
+    @PostMapping("/setting")
     @Transactional
     public ResponseEntity<Void> setBasicData(@RequestBody UserBasicData userBasicData, KeycloakAuthenticationToken authenticationToken){
         User user = jwtService.getUserFromToken(authenticationToken);

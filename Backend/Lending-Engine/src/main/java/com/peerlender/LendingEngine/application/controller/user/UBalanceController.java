@@ -9,9 +9,9 @@ import org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("user/balance")
+@RequestMapping("api/user/balance")
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost", "http://localhost:443", "https://localhost"}, maxAge = 3600, allowCredentials = "true", methods = {RequestMethod.POST})
 public class UBalanceController {
 
     private final BalanceService balanceService;

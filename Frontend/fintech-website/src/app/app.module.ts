@@ -59,7 +59,7 @@ import {OAuthModule} from "angular-oauth2-oidc";
     DataTablesModule,
     OAuthModule.forRoot({
       resourceServer: {
-        allowedUrls: ['http://localhost:8081'],
+        allowedUrls: ['https://fintech-lending.tangpoyu.click/api'],
         sendAccessToken: true
       }
     }),

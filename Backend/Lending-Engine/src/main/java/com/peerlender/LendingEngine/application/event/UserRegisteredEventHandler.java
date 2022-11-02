@@ -28,10 +28,27 @@ public class UserRegisteredEventHandler {
 
     public void HandleUserRegistration(byte[] eventByte) throws JSONException {
         JSONObject event = new JSONObject(new String(eventByte));
-        System.out.println(event);
-        User user = GSON.fromJson(event.get("details").toString(), User.class);
-        user.setBalance(new Balance());
-        LOGGER.info("user {} registered", user.getUsername());
-        userRepository.save(user);
+        String type = event.get("type").toString();
+        if("REGISTER".equals(type)) {
+            System.out.println(event);
+            User user = GSON.fromJson(event.get("details").toString(), User.class);
+            user.setBalance(new Balance());
+            LOGGER.info("user {} registered", user.getUsername());
+            userRepository.save(user);
+        }else if("LOGIN".equals(type)) {
+            JSONObject details = (JSONObject) event.get("details");
+            if(!details.isNull("register_method")) {
+                String username = details.get("username").toString();
+                User user = userRepository.findById(username).orElse(null);
+                if(user == null) {
+                    user = new User();
+                    user.setUsername(username);
+                    user.setBalance(new Balance());
+                    LOGGER.info("user {} registered", user.getUsername());
+                    userRepository.save(user);
+                }
+            }
+        }
+
     }
 }

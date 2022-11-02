@@ -18,8 +18,8 @@ import { UserAuthService } from './user-auth.service';
 
 export class UserService { 
 
-  LOAN_API_PATH_FOR_USER = "http://localhost:8081/user"
-  LOAN_API_PATH_FOR_ADMIN = "http://localhost:8081/admin"
+  LOAN_API_PATH_FOR_USER = "https://fintech-lending.tangpoyu.click/api/user"
+  LOAN_API_PATH_FOR_ADMIN = "https://fintech-lending.tangpoyu.click/api/admin"
 
   // requestHeader = new HttpHeaders(
   //   { "No-Auth": "True" }
@@ -46,7 +46,7 @@ export class UserService {
   }
 
   public setBasicData(userBasicData: UserBasicData) {
-    return this.httpClient.put(join(this.LOAN_API_PATH_FOR_USER, "setting"), userBasicData, { withCredentials: true})
+    return this.httpClient.post(join(this.LOAN_API_PATH_FOR_USER, "setting"), userBasicData, { withCredentials: true})
   }
 
   public getUserLoanData(): Observable<UserLoanData> {

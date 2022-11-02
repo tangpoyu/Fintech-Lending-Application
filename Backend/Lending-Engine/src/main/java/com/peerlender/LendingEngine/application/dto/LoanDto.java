@@ -2,7 +2,6 @@ package com.peerlender.LendingEngine.application.dto;
 
 import com.peerlender.LendingEngine.domain.entity.Loan;
 import com.peerlender.LendingEngine.domain.entity.Money;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import java.time.LocalDate;
 

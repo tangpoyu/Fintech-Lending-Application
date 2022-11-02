@@ -21,8 +21,8 @@ import java.util.stream.Collectors;
 // TODO: make endpoint which can see all loan application either ONGOING(0) OR COMPLETED(1) by System Admin.
 
 @RestController
-@RequestMapping(value = "user/loan")
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials = "true")
+@RequestMapping(value = "api/user/loan")
+@CrossOrigin(origins = {"http://localhost", "http://localhost:443", "https://localhost"}, maxAge = 3600, allowCredentials = "true", methods = {RequestMethod.GET,RequestMethod.POST})
 public class ULoanController {
 
     private final LoanApplicationService loanApplicationService;

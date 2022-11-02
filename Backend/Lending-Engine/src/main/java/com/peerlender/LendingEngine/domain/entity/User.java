@@ -21,9 +21,15 @@ public final class User {
     @OneToOne(cascade = CascadeType.ALL)
     private Balance balance;
 
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public void setBalance(Balance balance) {
         this.balance = balance;
     }
+
 
     public void setOccupation(String occupation) {
         this.occupation = occupation;

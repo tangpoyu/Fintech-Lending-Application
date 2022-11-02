@@ -9,8 +9,8 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping(value = "admin/userdata")
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials = "true")
+@RequestMapping(value = "api/admin/userdata")
+@CrossOrigin(origins = {"http://localhost", "http://localhost:443", "https://localhost"}, maxAge = 3600, allowCredentials = "true")
 public class AUserController {
 
     private final UserService userService;
