@@ -11,12 +11,16 @@ import java.util.Map;
 public class Balance {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "balance_generator")
     private long id;
 
-    @ElementCollection
-    @MapKeyClass(Currency.class)
-    @OneToMany(targetEntity = Money.class, cascade = CascadeType.ALL)
+    // user possesses balance and if no user then balance doesn't need to exist, but no balance, user also can exist.
+
+//    @OneToOne(cascade = CascadeType.ALL)
+//    private User user;
+
+
+    @OneToMany(cascade = CascadeType.ALL)
     private Map<Currency,Money> moneyMap = new HashMap<>();
 
     public Map<Currency, Money> getMoneyMap() {

@@ -1,8 +1,9 @@
 import {AuthConfig} from 'angular-oauth2-oidc';
+import { environment } from 'src/environments/environment';
 
 export const authConfig: AuthConfig = {
   clientId: 'oauth2-demo-pkce-client',
-  issuer: "https://fintech-lending.tangpoyu.click/auth/realms/oauth2",
+  issuer: environment.issuer,
   redirectUri: window.location.origin,
   requireHttps: false,
   responseType: 'code',
@@ -10,3 +11,4 @@ export const authConfig: AuthConfig = {
   strictDiscoveryDocumentValidation: false,
   skipIssuerCheck: true,
 }
+

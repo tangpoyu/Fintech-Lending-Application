@@ -21,6 +21,7 @@ public class JwtService {
         if (principal instanceof KeycloakPrincipal) {
             KeycloakPrincipal<KeycloakSecurityContext> kPrincipal = (KeycloakPrincipal<KeycloakSecurityContext>) principal;
             String username = kPrincipal.getKeycloakSecurityContext().getToken().getPreferredUsername();
+            kPrincipal.getKeycloakSecurityContext().getToken().getEmail();
             User user = userRepository.findById(username).orElseThrow(() -> new UserNotFoundException(username));
             return user;
         }

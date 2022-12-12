@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { join } from '@fireflysemantics/join'
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { loan } from '../interface/loan';
 import { LoanApplicaion } from '../interface/loanApplication';
 import { Money } from '../interface/money';
@@ -18,19 +19,15 @@ import { UserAuthService } from './user-auth.service';
 
 export class UserService { 
 
-  LOAN_API_PATH_FOR_USER = "https://fintech-lending.tangpoyu.click/api/user"
-  LOAN_API_PATH_FOR_ADMIN = "https://fintech-lending.tangpoyu.click/api/admin"
 
-  // requestHeader = new HttpHeaders(
-  //   { "No-Auth": "True" }
-  // )
-
+  LOAN_API_PATH_FOR_USER = environment.LOAN_API_PATH_FOR_USER
+  LOAN_API_PATH_FOR_ADMIN = environment.LOAN_API_PATH_FOR_ADMIN
 
   constructor(
     private httpClient: HttpClient,
     private userAuthService: UserAuthService,
     private router: Router
-  ) { }
+  ) {}
 
 
   // ---------------------- user ----------------------------------------------
@@ -44,6 +41,7 @@ export class UserService {
       error: (err) => { console.log(err) }
     })
   }
+
 
   public setBasicData(userBasicData: UserBasicData) {
     return this.httpClient.post(join(this.LOAN_API_PATH_FOR_USER, "setting"), userBasicData, { withCredentials: true})

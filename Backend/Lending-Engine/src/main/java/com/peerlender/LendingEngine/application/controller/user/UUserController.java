@@ -10,6 +10,8 @@ import org.keycloak.adapters.springsecurity.token.KeycloakAuthenticationToken;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "api/user", method = {RequestMethod.GET,RequestMethod.POST})
@@ -28,15 +30,26 @@ public class UUserController {
         return ResponseEntity.ok(result);
     }
 
+    @GetMapping("/validateEmail")
+    public void sendValidateEmail(KeycloakAuthenticationToken authenticationToken){
+        User user = jwtService.getUserFromToken(authenticationToken);
+    }
+
     @GetMapping("/userdata")
     public ResponseEntity<UserData> GetUserData(KeycloakAuthenticationToken authenticationToken){
         User user = jwtService.getUserFromToken(authenticationToken);
         UserData userData = new UserData();
 
         try{
-            userData.setAmount(user.getBalance().getMoneyMap().get(Currency.NT).getAmount());
+            userData.getAmount().add(user.getBalance().getMoneyMap().get(Currency.NT).getAmount());
         }catch (Exception e){
-            userData.setAmount(0);
+            userData.getAmount().add(0d);
+        }
+
+        try{
+            userData.getAmount().add(user.getBalance().getMoneyMap().get(Currency.USD).getAmount());
+        }catch (Exception e){
+            userData.getAmount().add(0d);
         }
 
         return ResponseEntity.ok(userData);

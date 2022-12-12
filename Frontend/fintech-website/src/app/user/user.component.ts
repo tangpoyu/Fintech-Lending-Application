@@ -15,7 +15,7 @@ declare var $: any;
 export class UserComponent implements OnInit{
 
   message = "";
-  money = 0;
+  money : Array<number> = [];
 
   constructor(private userService: UserService, private router: Router) { 
     this.userService.isInitialize()

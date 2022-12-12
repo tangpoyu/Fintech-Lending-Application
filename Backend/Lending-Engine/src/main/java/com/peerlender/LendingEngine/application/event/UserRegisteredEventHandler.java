@@ -13,6 +13,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserRegisteredEventHandler {
 
+    // github:
+    //         HOME PAGE = https://fintech-lending.tangpoyu.click
+    //         Authorization callback URL = https://fintech-lending.tangpoyu.click/auth/realms/oauth2/broker/github/endpoint
+
+    // github:
+    //        HOME PAGE = https://localhost:4200
+    //        Authorization callback URL = http://localhost:8080/auth/realms/oauth2/broker/github/endpoint
     private Logger LOGGER = LoggerFactory.getLogger(UserRegisteredEventHandler.class);
     private static final Gson GSON = new Gson();
     private String methodName = "HandleUserRegistration";

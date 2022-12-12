@@ -37,14 +37,14 @@ public class LoanService {
     }
 
     @Transactional
-    public void RepayLoan(final Money moneyToRepay, final long loanId, final User borrower){
+    public void RepayLoan(final double moneyToRepay, final long loanId, final User borrower){
        Loan loan = loanRepository.findOneByIdAndBorrowerAndStatus(loanId, borrower, Status.ONGOING)
                .orElseThrow(() -> new LoanNotFoundException(loanId));
-       Money actualPaidAmount = moneyToRepay.getAmount() > loan.getAmount().getAmount() ? loan.getAmount() : moneyToRepay;
+       Money actualPaidAmount = moneyToRepay > loan.getAmount().getAmount() ? loan.getAmount() : new Money(loan.getAmount().getCurrency(), moneyToRepay);
        borrower.getBalance().Withdraw(actualPaidAmount);
        loan.getLender().getBalance().TopUp(actualPaidAmount);
-       Money updatedAmountRepayed =  loan.getAmountRepayed().Add(actualPaidAmount);
-       loan.setAmountRepayed(updatedAmountRepayed);
+       Money updatedAmountRepayed =  loan.getAmountRepaid().Add(actualPaidAmount);
+       loan.setAmountRepaid(updatedAmountRepayed);
        if(loan.getAmount().getAmount() == 0) {
            loan.setStatus(Status.COMPLETED);
        }

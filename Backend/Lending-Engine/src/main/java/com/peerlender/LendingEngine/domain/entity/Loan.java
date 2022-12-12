@@ -19,7 +19,7 @@ public class Loan {
     @OneToOne(cascade = CascadeType.ALL)
     private Money amount;
     @OneToOne(cascade = CascadeType.ALL)
-    private Money amountRepayed;
+    private Money amountRepaid;
     private double interestRate;
     private LocalDate dateLent;
     private LocalDate dateDue;
@@ -29,7 +29,7 @@ public class Loan {
         this.borrower = loanApplication.getBorrower();
         this.lender = lender;
         this.amount = loanApplication.getAmount();
-        this.amountRepayed = new Money(Currency.NT, 0);
+        this.amountRepaid = new Money(loanApplication.getAmount().getCurrency(), 0);
         this.interestRate = loanApplication.getInterestRate();
         this.dateLent = LocalDate.now();
         this.dateDue = LocalDate.now().plusDays(loanApplication.getRepaymentTerm());
@@ -40,11 +40,11 @@ public class Loan {
     }
 
     public Money getAmount() {
-        return new Money(Currency.NT, amount.getAmount() * (1 + interestRate / 100d) - amountRepayed.getAmount());
+        return new Money(amount.getCurrency(), amount.getAmount() * (1 + interestRate / 100d) - amountRepaid.getAmount());
     }
 
-    public void setAmountRepayed(Money amountRepayed) {
-        this.amountRepayed = amountRepayed;
+    public void setAmountRepaid(Money amountRepaid) {
+        this.amountRepaid = amountRepaid;
     }
 }
 

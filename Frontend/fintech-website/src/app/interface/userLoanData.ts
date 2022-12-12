@@ -1,3 +1,3 @@
 export interface UserLoanData {
-    amount: number
+    amount: Array<number>
 }

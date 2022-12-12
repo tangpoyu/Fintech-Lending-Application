@@ -13,8 +13,7 @@ export class SettingComponent implements OnInit {
   constructor(private userService: UserService,
     private notifierService: NotifierService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   setBasicData(ngForm: NgForm) {
     this.userService.setBasicData(ngForm.value).subscribe({

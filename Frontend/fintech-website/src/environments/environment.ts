@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  LOAN_API_PATH_FOR_USER: "http://localhost:8081/api/user",
+  LOAN_API_PATH_FOR_ADMIN: "http://localhost:8081/api/admin",
+  allowedUrls: 'http://localhost:8081/api',
+  issuer: "http://localhost:8080/auth/realms/oauth2",
 };
 
 /*

@@ -17,7 +17,7 @@ public class LoanDto {
         this.lenderName = loan.getLender().getUsername();
         this.borrowerName = loan.getBorrower().getUsername();
         this.amount = loan.getAmount();
-        this.amountRepayed = loan.getAmountRepayed();
+        this.amountRepayed = loan.getAmountRepaid();
         this.datelent = loan.getDateLent();
         this.datedue = loan.getDateDue();
     }

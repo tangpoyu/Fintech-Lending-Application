@@ -444,20 +444,19 @@
                 <cacheTemplates>true</cacheTemplates>
                 <dir>${jboss.home.dir}/themes</dir>
             </theme>
-<spi name="eventsListener">
-    <provider name="keycloak-to-rabbitmq" enabled="true">
-        <properties>
-            <property name="url" value="${env.KK_TO_RMQ_URL:localhost}"/>
-            <property name="port" value="${env.KK_TO_RMQ_PORT:5672}"/>
-            <property name="vhost" value="${env.KK_TO_RMQ_VHOST:/}"/>
-            <property name="exchange" value="${env.KK_TO_RMQ_EXCHANGE:myUserRegisteredTopic}"/>
-            <property name="use_tls" value="${env.KK_TO_RMQ_USE_TLS:false}"/>
-            
-            <property name="username" value="${env.KK_TO_RMQ_USERNAME:guest}"/>
-            <property name="password" value="${env.KK_TO_RMQ_PASSWORD:guest}"/>
-        </properties>
-    </provider>
-</spi>
+            <spi name="eventsListener">
+                <provider name="keycloak-to-rabbitmq" enabled="true">
+                    <properties>
+                        <property name="url" value="${env.KK_TO_RMQ_URL:localhost}"/>
+                        <property name="port" value="${env.KK_TO_RMQ_PORT:5672}"/>
+                        <property name="vhost" value="${env.KK_TO_RMQ_VHOST:/}"/>
+                        <property name="exchange" value="${env.KK_TO_RMQ_EXCHANGE:myUserRegisteredTopic}"/>
+                        <property name="use_tls" value="${env.KK_TO_RMQ_USE_TLS:false}"/>
+                        <property name="username" value="${env.KK_TO_RMQ_USERNAME:guest}"/>
+                        <property name="password" value="${env.KK_TO_RMQ_PASSWORD:guest}"/>
+                    </properties>
+                </provider>
+            </spi>
             <spi name="eventsStore">
                 <provider name="jpa" enabled="true">
                     <properties>

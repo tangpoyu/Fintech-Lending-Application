@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70864df3-edf2-432c-adb3-5f19a2998a3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/SmsAuthenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/SmsAuthenticatorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/gateway/AwsSmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/gateway/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/click/tangpoyu/gateway/SmsServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF.services/org.keycloak.authentication.AuthenticatorFactory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/click/tangpoyu/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/controller/user/UUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/controller/user/UUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/LoanDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/LoanDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/LoanRepayRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/LoanRepayRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/dto/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/event/UserRegisteredEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/event/UserRegisteredEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/utils/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/application/utils/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Loan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/repository/LoanApplicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/repository/LoanApplicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/service/LoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lending-Engine/src/main/java/com/peerlender/LendingEngine/domain/service/LoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone_xml_history/20221020-232304926/standalone.v1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone_xml_history/standalone.boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone_xml_history/standalone.boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone_xml_history/standalone.last.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/configuration/standalone_xml_history/standalone.last.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/data/keycloak.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/data/keycloak.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/data/keycloak.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/data/keycloak.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/log/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../keycloak-13.0.1/keycloak-13.0.1/standalone/log/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/dist/fintech-website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/dist/fintech-website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/dist/fintech-website/main.1a02398d4150a8b8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/_auth/auth.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/_auth/auth.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/_services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/_services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/interface/currency.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/interface/currency.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/interface/userLoanData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/interface/userLoanData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/setting/setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/setting/setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/app/user/user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/fintech-website/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/fintech-website/src/environments/environment.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IoQJPQDDadJn9OEcnHuc4PsdSW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Spring boot\Fintech-Lending-Application\Backend\sms-keycloak-spi\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70864df3-edf2-432c-adb3-5f19a2998a3f" name="Changes" comment="" />
+      <created>1670845384775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670845384775</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

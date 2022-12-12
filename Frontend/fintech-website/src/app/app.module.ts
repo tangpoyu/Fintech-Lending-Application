@@ -28,6 +28,7 @@ import { WithdrawComponent } from './user/withdraw/withdraw.component';
 import { LoanComponent } from './admin/loan/loan.component';
 import { AdminLoanApplicationComponent } from './admin/admin-loan-application/admin-loan-application.component';
 import {OAuthModule} from "angular-oauth2-oidc";
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,7 @@ import {OAuthModule} from "angular-oauth2-oidc";
     DataTablesModule,
     OAuthModule.forRoot({
       resourceServer: {
-        allowedUrls: ['https://fintech-lending.tangpoyu.click/api'],
+        allowedUrls: [environment.allowedUrls],
         sendAccessToken: true
       }
     }),

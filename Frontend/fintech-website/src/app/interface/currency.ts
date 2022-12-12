@@ -1,3 +1,3 @@
 export enum Currency {
-    NT
+    NT, USD
 }

@@ -17,9 +17,11 @@ public final class User {
     @Id
     private String username;
     private String first_name, last_name, occupation;
-    private  int age;
+    private int age;
+
     @OneToOne(cascade = CascadeType.ALL)
     private Balance balance;
+
 
 
     public void setUsername(String username) {

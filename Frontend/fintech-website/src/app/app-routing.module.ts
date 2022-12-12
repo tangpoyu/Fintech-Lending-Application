@@ -18,6 +18,7 @@ import { WithdrawComponent } from './user/withdraw/withdraw.component';
 import { AuthGuard } from './_auth/auth.guard';
 import { AdminLoanApplicationComponent } from './admin/admin-loan-application/admin-loan-application.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
@@ -37,7 +38,7 @@ const routes: Routes = [
       { path: 'lent', component: LentComponent, canActivate: [AuthGuard], data: { roles: ['app_user'] } },
       { path: "setting", component: SettingComponent, canActivate: [AuthGuard], data: { roles: ['app_user'] } },
       { path: "recharge", component: RechargeComponent, canActivate: [AuthGuard], data: { roles: ['app_user'] } },
-      { path: "withdraw", component: WithdrawComponent, canActivate: [AuthGuard], data: { roles: ['app_user'] } }
+      { path: "withdraw", component: WithdrawComponent, canActivate: [AuthGuard], data: { roles: ['app_user'] } },
     ]
   },
   { path: 'login', component: LoginComponent },
