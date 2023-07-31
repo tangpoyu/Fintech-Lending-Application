@@ -11,6 +11,7 @@ public class LoanApplicationDto {
     private String username, fullName, occupation;
     private AmountDto amount;
 
+
     public LoanApplicationDto(LoanApplication loanApplication) {
         this.id = loanApplication.getId();
         this.interestRate = loanApplication.getInterestRate();
